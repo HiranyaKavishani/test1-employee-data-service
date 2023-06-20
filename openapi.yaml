@@ -6,7 +6,7 @@ info:
 servers:
   - url: http://localhost:8290
 paths:
-  /services/RDBMSDataService/Employee/{EmployeeId}:
+  /services/EmployeeDataService/Employee/{EmployeeId}:
     get:
       parameters:
         - in: path
@@ -42,7 +42,7 @@ paths:
       responses:
         '200':
           description: ok
-  /services/RDBMSDataService/Employee:
+  /services/EmployeeDataService/Employee:
     post:
       requestBody:
         required: true

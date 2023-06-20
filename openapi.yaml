@@ -27,7 +27,7 @@ paths:
                 type: object
               examples:
                 success:
-                  value: "{\n\t\"Employees\": {\n\t\t\"Employee\": [{\n\t\t\t\"EmployeeNumber\": \"1\",\n\t\t\t\"FirstName\": \"John\", \n\t\t\t\"FullName\": \"John Doe\", \n\t\t\t\"Email\": \"JohnDoe@gmail.com\",\n\t\t\t\"Salary\": \"10000\"\n\t\t}]\n\t}\n}"
+                  value: "{\n\t\"Employees\": {\n\t\t\"Employee\": [{\n\t\t\t\"EmployeeNumber\": \"1\", \n\t\t\t\"FullName\": \"John Doe\", \n\t\t\t\"Email\": \"JohnDoe@gmail.com\",\n\t\t\t\"Salary\": \"10000\"\n\t\t}]\n\t}\n}"
     delete:
       parameters:
         - in: path

@@ -42,7 +42,7 @@ paths:
       responses:
         '200':
           description: ok
-  /services/EmployeeDataService/Employees:
+  /services/EmployeeDataService/Employee:
     post:
       requestBody:
         required: true

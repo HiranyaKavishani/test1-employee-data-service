@@ -12,8 +12,7 @@
       "Employee":[
          {
             "EmployeeNumber":"$EmployeeNumber",
-            "FirstName":"$FirstName",
-            "LastName":"$LastName",
+            "FullName":"$FirstName $LastName",
             "Email":"$Email",
             "Salary":"$Salary"
          }

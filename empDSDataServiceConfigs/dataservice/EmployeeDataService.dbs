@@ -6,13 +6,13 @@
       <property name="password">$SYSTEM:DB_PASS</property>
    </config>
    <query id="GetEmployeeDetails" useConfig="Datasource">
-      <sql>select EmployeeNumber, FirstName, LastName, Email, Salary from Employees where EmployeeNumber=:EmployeeNumber</sql>
+      <sql>select EmployeeNumber, CONCAT(FirstName, '', LastName) AS FullName, Email, Salary from Employees where EmployeeNumber=:EmployeeNumber</sql>
       <result outputType="json">{
    "Employees":{
       "Employee":[
          {
             "EmployeeNumber":"$EmployeeNumber",
-            "FullName":"$FirstName $LastName",
+            "FullName":"$FullName",
             "Email":"$Email",
             "Salary":"$Salary"
          }
